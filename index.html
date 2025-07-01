@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,9 +8,52 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="shortcut icon" href="/assets/images/favicon-32x32.png" type="image/x-icon">
 </head>
-<body>
+
+<body class="md:bg-[#36384e] md:flex md:items-center md:justify-center w-full h-screen">
+    <main>
+        <div class="w-full  rounded-b-xl">
+            <picture>
+                <source srcset="/assets/images/illustration-sign-up-desktop.svg" media="(min-width: 1024px)" />
+                <source class="" srcset="/assets/images/illustration-sign-up-tablet.svg" media="(min-width: 768px)" />
+                <img class="w-full h-full md:h-" src="/assets/images/illustration-sign-up-mobile.svg" alt="sign-up">
+            </picture>
+        </div>
+        <div class="flex flex-col py-8 px-6 gap-2">
+            <h1 class="font-semibold text-3xl text-[#242742]">Stay updated!</h1>
+            <p class="mt-4 text-[#36384e]">join 60,000+ product managers recieving monthly updates on:</p>
+
+            <div class="flex mt-4 gap-4 items-center">
+                <img class="w-5" src="/assets/images/icon-success.svg" alt="sucess_icon">
+                <p class="text-[#36384e] wrap">product discovery and building what matters</p>
+            </div>
+            
+            <div class="flex mt-4 gap-4 items-center">
+                <img class="w-5" src="/assets/images/icon-success.svg" alt="sucess_icon">
+                <p class="text-[#36384e] wrap">Measuring to ensure updates are a sucess.</p>
+            </div>
+            
+            <div class="flex mt-4 gap-4 items-center">
+                <img class="w-5" src="/assets/images/icon-success.svg" alt="sucess_icon">
+                <p class="text-[#36384e] wrap">And much more!</p>
+            </div>
+        </div>
+
+        <form class="px-6 mt-4">
+                <div class="flex justify-between items-center px-2">
+                    <p class="text-[#242742] text-sm">Email address</p>
+                    <p class="text-[#ff6257] text-sm hidden errorContent">Verified email required</p>
+                </div>
+                <div class="w-full mt-2 border-[1px] border-[#ff6257] opacity-50 rounded-lg">
+                    <input  type="email" placeholder="email@company.com" class="w-full inputBox p-4 rounded-lg">
+                </div>
+                <button class="submit w-full p-4 rounded-lg mt-6 flex justify-center items-center bg-[#242742] hover:bg-[#949494] active:bg-[#949494] text-white">Subscribe
+                                                                                                                     to monthly newsletter</button>
+        </form>
+
+    </main>
 
 
-    <script src="script.js"></script>        
+    <script src="script.js"></script>
 </body>
+
 </html>
