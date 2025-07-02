@@ -10,12 +10,13 @@
 </head>
 
 <body class="md:bg-[#36384e] md:flex md:items-center md:justify-center w-full h-screen">
-    <main class="put md:flex md:gap- md:w-[800px] lg:w-[1000px] bg-white md:rounded-[20px] md:p-4">
+    <main class="container md:flex md:w-[800px] lg:w-[1000px] bg-white md:rounded-[20px] md:p-4">
         <div class="w-full md:w-2/5  rounded-b-xl md:order-1">
             <picture>
                 <source srcset="/assets/images/illustration-sign-up-desktop.svg" media="(min-width: 1024px)" />
                 <source class="" srcset="/assets/images/illustration-sign-up-desktop.svg" media="(min-width: 768px)" />
-                <img class="w-full md:w-full md:object-cover lg:object-cover h-full md:w-[200px] md:h-" src="/assets/images/illustration-sign-up-mobile.svg" alt="sign-up">
+                <img class="w-full md:w-full md:object-cover lg:object-cover h-full md:w-[200px] md:h-"
+                    src="/assets/images/illustration-sign-up-mobile.svg" alt="sign-up">
             </picture>
         </div>
         <div class="md:order-0 md:bg-red-40 md:w-3/5 md:p-6">
@@ -45,16 +46,36 @@
                     <p class="text-[#ff6257] text-sm hidden errorContent">Verified email required</p>
                 </div>
                 <div class="w-full mt-2 border-[1px] border-blue-200  rounded-lg">
-                    <input type="email" placeholder="email@company.com" class="w-full inputBox p-4 text-[#242742] font-semibold rounded-lg">
+                    <input type="email" placeholder="email@company.com"
+                        class="w-full inputBox p-4 text-[#242742] font-semibold rounded-lg">
                 </div>
                 <button
                     class="submit w-full p-4 rounded-lg mt-6 flex shadow-2xl justify-center items-center bg-[#242742] hover:bg-gradient-to-r active:bg-gradient-to-r from-[#ff6257] to-[#949494] text-white">Subscribe
                     to monthly newsletter</button>
             </form>
         </div>
-
-
     </main>
+
+    <div class="dismissContent hidden px-8 py-8 flex flex-col justify-between h-full md:h-auto md:py-8 md:shadow-2xl md:w-[400px] lg:w-[500px] bg-white md:rounded-[20px] md:px-12">
+
+        <div class="items-start flex flex-col gap-8 pt-48 md:pt-0">
+            <div><img src="/assets/images/icon-success.svg" alt=""></div>
+            <h1 class="font-semibold md:font-bold text-3xl md:text-4xl text-[#242742]">
+                Thanks for subscribing!
+            </h1>
+            <p class="text-[#242742]">A confirmation email has been sent to <b>ash@loremcompany.com.</b>
+                Please open it and click the button inside to confirm your subscription.</p>
+
+            
+
+        </div>
+        <button
+                    class="dismiss w-full p-4  rounded-lg mt-6 flex shadow-2xl justify-center 
+                            items-center bg-[#242742] hover:bg-gradient-to-r active:bg-gradient-to-r from-[#ff6257] to-[#949494] text-white">Dismiss message</button>
+    </div>
+
+
+
 
 
     <script src="script.js"></script>
